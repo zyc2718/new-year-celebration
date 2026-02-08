@@ -29,7 +29,7 @@ export default function BackgroundMusic() {
       <audio
         ref={audioRef}
         loop
-        src="/audio/bgm.mp3"
+        src="audio/bgm.mp3"
       />
       
       <motion.button
