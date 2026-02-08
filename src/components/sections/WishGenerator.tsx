@@ -6,14 +6,7 @@ import { Sparkles } from "lucide-react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
-const relations = ["Friend", "Partner", "Family", "Colleague"];
-
-const wishes = {
-  Friend: "May our laughter echo through 2026, creating memories that outshine the stars.",
-  Partner: "In every timeline, in every universe, I choose you to walk into 2026 with.",
-  Family: "To the roots that ground me and the wings that let me fly—Happy New Year.",
-  Colleague: "Here's to another year of shared goals, coffee breaks, and conquering challenges."
-};
+const relations = ["朋友", "伴侣", "家人", "同事"];
 
 export default function WishGenerator() {
   const [selected, setSelected] = useState<string | null>(null);
@@ -29,29 +22,29 @@ export default function WishGenerator() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const mockWishes: Record<string, string[]> = {
-      Friend: [
-        "May our digital and physical worlds align for a spectacular 2026.",
-        "To another year of breaking the simulation and making real memories.",
-        "May our laughter echo through 2026, creating memories that outshine the stars.",
+      "朋友": [
+        "愿我们在2026年的数字与物理世界里都能精彩纷呈。",
+        "又是一年，让我们在虚拟与现实中共同创造更多回忆。",
+        "愿我们的笑声在2026年回荡，创造比星辰更璀璨的回忆。",
       ],
-      Partner: [
-        "Our love is the only constant in an ever-changing 2026.",
-        "Walking into the future with you is my only resolution.",
-        "In every timeline, in every universe, I choose you to walk into 2026 with.",
+      "伴侣": [
+        "在瞬息万变的2026年，我们的爱是唯一的永恒。",
+        "与你一同迈向未来，是我唯一的新年心愿。",
+        "在每一个时空，每一个宇宙，我都选择与你共同步入2026。",
       ],
-      Family: [
-        "Roots deep as time, love bright as the 2026 dawn.",
-        "Home is wherever we are together in this new year.",
-        "To the roots that ground me and the wings that let me fly—Happy New Year.",
+      "家人": [
+        "根深如时光，爱亮如2026年的黎明。",
+        "只要我们在一起，哪里都是家。",
+        "致那些支撑我的根和让我飞翔的翅膀——新年快乐。",
       ],
-      Colleague: [
-        "Synchronizing our goals for a high-performance 2026.",
-        "May your productivity be as infinite as the new year's potential.",
-        "Here's to another year of shared goals, coffee breaks, and conquering challenges.",
+      "同事": [
+        "为我们在2026年共同的高效目标而同步。",
+        "愿你的创造力如新年的潜力般无限。",
+        "又是一年共同的目标、茶歇时间，以及战胜每一个挑战。",
       ]
     };
 
-    const options = mockWishes[selected] || ["Happy New Year 2026!"];
+    const options = mockWishes[selected] || ["2026新年快乐！"];
     const randomWish = options[Math.floor(Math.random() * options.length)];
     
     setGeneratedWish(randomWish);
@@ -61,8 +54,8 @@ export default function WishGenerator() {
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center py-20 px-4">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-display mb-4">AI Wish Crafter</h2>
-        <p className="text-white/60">Select a recipient to generate a unique greeting.</p>
+        <h2 className="text-4xl md:text-5xl font-display mb-4">AI 祝福生成器</h2>
+        <p className="text-white/60">选择一个对象，生成一份独特的新年祝愿。</p>
       </div>
 
       <GlassCard className="w-full max-w-2xl min-h-[400px] flex flex-col items-center justify-center p-8 md:p-12 relative overflow-hidden">
@@ -88,7 +81,7 @@ export default function WishGenerator() {
         <div className="mb-12 z-10">
           <MagneticButton onClick={handleGenerate} className={!selected ? "opacity-50 cursor-not-allowed" : ""}>
             <span className="flex items-center gap-2">
-              {isGenerating ? "Crafting..." : "Generate Wish"} 
+              {isGenerating ? "正在生成..." : "生成祝福"} 
               <Sparkles size={16} />
             </span>
           </MagneticButton>

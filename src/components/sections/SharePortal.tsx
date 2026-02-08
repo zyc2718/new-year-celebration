@@ -30,14 +30,14 @@ export default function SharePortal() {
       <div className="max-w-4xl mx-auto text-center">
         <GlassCard className="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8">
           <div className="text-left">
-            <h3 className="text-2xl font-display text-white mb-2">Share the Joy</h3>
-            <p className="text-white/50 text-sm">Send this experience to someone special.</p>
+            <h3 className="text-2xl font-display text-white mb-2">分享这份喜悦</h3>
+            <p className="text-white/50 text-sm">将这份体验发送给特别的人。</p>
           </div>
 
           <div className="flex gap-4">
             <MagneticButton onClick={copyLink}>
               <span className="flex items-center gap-2">
-                <Copy size={16} /> Copy Link
+                <Copy size={16} /> 复制链接
               </span>
             </MagneticButton>
             <button className="p-4 rounded-full glass hover:bg-white/10 transition-colors text-secondary">

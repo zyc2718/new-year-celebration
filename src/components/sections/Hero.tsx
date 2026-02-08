@@ -23,35 +23,26 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="relative"
         >
-          <h1 className="text-8xl md:text-[10rem] font-display font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-white/20 select-none">
-            2026
+          <h1 className="text-6xl md:text-8xl font-display font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-white/20 select-none">
+            致童怿雅
           </h1>
           <div className="absolute -inset-4 blur-3xl bg-primary/20 rounded-full z-[-1] animate-pulse-slow" />
         </motion.div>
 
         <TextReveal 
-          text="Happy New Year" 
-          className="text-4xl md:text-6xl font-script text-gold" 
+          text="——一封来自远方的信件" 
+          className="text-2xl md:text-4xl font-body text-gold/80" 
           delay={0.5} 
         />
         
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-          className="text-white/60 text-sm md:text-base max-w-md font-body tracking-wide"
-        >
-          A new chapter begins. Embrace the journey.
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
           className="pt-12"
         >
           <MagneticButton onClick={scrollToTimeline}>
-            Begin Experience
+            开启信笺
           </MagneticButton>
         </motion.div>
       </div>

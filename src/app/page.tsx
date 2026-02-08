@@ -1,6 +1,7 @@
 import ParticleBackground from "@/components/canvas/ParticleBackground";
 import Hero from "@/components/sections/Hero";
 import Timeline from "@/components/sections/Timeline";
+import NewYearLetter from "@/components/sections/NewYearLetter";
 import WishGenerator from "@/components/sections/WishGenerator";
 import InteractiveGift from "@/components/sections/InteractiveGift";
 import MessageWall from "@/components/sections/MessageWall";
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="relative z-10">
         <Hero />
         <Timeline />
+        <NewYearLetter />
         <div className="bg-gradient-to-b from-transparent to-black/80">
           <WishGenerator />
           <InteractiveGift />

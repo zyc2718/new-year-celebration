@@ -5,10 +5,10 @@ import { useRef } from "react";
 import { GlassCard } from "@/components/ui/GlassCard";
 
 const events = [
-  { year: "2025", month: "January", title: "Reflection", description: "Looking back at the memories we made." },
-  { year: "2025", month: "June", title: "Growth", description: "Challenges overcome, lessons learned." },
-  { year: "2025", month: "December", title: "Anticipation", description: "Standing on the edge of tomorrow." },
-  { year: "2026", month: "January", title: "New Dawn", description: "The future is open wide." },
+  { year: "2024", month: "10月", title: "初次相识", description: "彼时你还在高三。" },
+  { year: "2024-2025", month: "备考期", title: "潜心蓄力", description: "你暂别交流，如“消失的她”一般沉入备考的深海。" },
+  { year: "2025", month: "6月", title: "金榜题名", description: "你成功突破了高考的重重压力，考入了自己理想的大学，喜讯传来，我为你欣喜。" },
+  { year: "2025-至今", month: "现在", title: "追寻自我", description: "你依然在路上，继续追寻那个更加真实、更加完整的自我。" },
 ];
 
 function TimelineItem({ item, index }: { item: typeof events[0], index: number }) {
@@ -58,7 +58,7 @@ export default function Timeline() {
     <section id="timeline" ref={ref} className="relative min-h-screen py-32 px-4 md:px-20 max-w-7xl mx-auto">
       <motion.div style={{ opacity }} className="relative z-10">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl font-display mb-4">Time Capsule</h2>
+          <h2 className="text-4xl md:text-5xl font-display mb-4">时空胶囊</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto" />
         </div>
         

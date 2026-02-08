@@ -29,7 +29,7 @@ export default function BackgroundMusic() {
       <audio
         ref={audioRef}
         loop
-        src="https://assets.mixkit.co/music/preview/mixkit-dreamy-hope-42.mp3" // Placeholder ambient track
+        src="/audio/bgm.mp3"
       />
       
       <motion.button
